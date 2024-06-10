@@ -33,5 +33,5 @@ In **TankStrike**, you control a tank in a maze with the objective of defeating 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/TankStrike.git
+   git clone https://github.com/yourusername/TankStrike.git](https://github.com/vickeymadhukar/tankfight
 
