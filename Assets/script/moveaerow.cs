@@ -4,34 +4,47 @@ using UnityEngine;
 
 public class moveaerow : MonoBehaviour
 {
-    [SerializeField]
-    private float speed1;
-    [SerializeField]
-    private float rotation1;
+    public float speed;
+    private float moveinx;
+    private float moveiny;
+    private Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
+        moveinx = 0f;
+        moveiny = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal2");
-        float verticalInput = Input.GetAxis("Vertical2");
-        Vector2 movementDirection = new Vector2(horizontalInput, verticalInput);
-        movementDirection.Normalize();
-
-        float Inputmagnitude = Mathf.Clamp01(movementDirection.magnitude);
-        transform.Translate(movementDirection * speed1 * Inputmagnitude * Time.deltaTime);
-
-
-        if (movementDirection != Vector2.zero)
+        rb.velocity = new Vector2(moveinx * speed * Time.deltaTime, moveiny * speed * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, movementDirection);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotation1 * Time.deltaTime);
+            moveiny = 1;
         }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            moveinx = -1;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            moveinx = 1;
 
-
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            moveiny = -1;
+        }
+        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            moveiny = 0;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            moveinx = 0;
+        }
     }
 }

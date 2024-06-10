@@ -8,46 +8,19 @@ public class moveAWSD : MonoBehaviour
     private float moveinx;
     private float moveiny;
     private Rigidbody2D rb;
-    public float rotateSpeed=10f;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         moveinx = 0f;
-       // moveiny = 0f;
+        moveiny = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-       
-            rb.velocity = Vector2.right * Time.deltaTime * speed * Input.GetAxisRaw("Vertical");
-        
-
-
-        transform.Rotate(Vector3.forward * Time.deltaTime * Input.GetAxisRaw("Horizontal") * rotateSpeed);  
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*rb.velocity = new Vector2(moveinx * speed * Time.deltaTime, moveiny * speed * Time.deltaTime);
+        rb.velocity = new Vector2(moveinx * speed * Time.deltaTime, moveiny * speed * Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.W))
         {
             moveiny = 1;
@@ -72,6 +45,6 @@ public class moveAWSD : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             moveinx = 0;
-        }*/
+        }
     }
 }

@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - tank2
   - enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -44,5 +44,8 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: baground
-    uniqueID: 2233801315
+    uniqueID: 2737990269
+    locked: 0
+  - name: main
+    uniqueID: 3605857815
     locked: 0

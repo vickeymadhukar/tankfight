@@ -34,10 +34,4 @@ public class goli : MonoBehaviour
             collision.GetComponent<enemy>().TakeDamage(damage);
         }
     }
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        var direction = Vector3.Reflect(rb.velocity.normalized,collision.contacts[0].normal);
-        rb.velocity = direction * Mathf.Max(speed, 0f);
-        
-    }*/
 }
