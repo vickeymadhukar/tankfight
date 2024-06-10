@@ -1,6 +1,7 @@
 # TankStrike
 
-![TankStrike Logo](path/to/logo.png)
+![Black and Yellow Grunge Gaming Youtube Thumbnail (1)](https://github.com/vickeymadhukar/tankfight/assets/75882224/4918efa0-5e44-4806-9f31-af7bf8f87c78)
+
 
 ## Overview
 
