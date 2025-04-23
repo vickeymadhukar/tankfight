@@ -29,6 +29,9 @@ In **TankStrike**, you control a tank in a maze with the objective of defeating 
 3. **Collect Power-Ups**: Gain advantages by collecting power-ups scattered in the maze.
 4. **Defeat Your Opponent**: Outplay your opponent by using strategy and quick reflexes.
 
+## Play game
+https://vickeymadhukar.itch.io/shadowwarfare
+
 ## Installation
 
 1. Clone the repository:
