@@ -30,8 +30,7 @@ In **TankStrike**, you control a tank in a maze with the objective of defeating 
 4. **Defeat Your Opponent**: Outplay your opponent by using strategy and quick reflexes.
 
 ## Play game
-https://vickeymadhukar.itch.io/shadowwarfare
-
+https://vickeymadhukar.itch.io/tankstrike
 ## Installation
 
 1. Clone the repository:
